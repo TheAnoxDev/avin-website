@@ -1204,7 +1204,7 @@
             fadeElements.forEach(el => observer.observe(el));
 
             // Counter Animation
-            const counters = document.querySelectorAll('.number');
+            const counters = document.querySelectorAll('.number[data-target]');
             const speed = 200;
 
             const runCounter = (counter) => {
