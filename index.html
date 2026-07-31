@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="شرکت تاسیساتی آوین - گازرسانی مسکونی، تجاری، اداری، صنعتی و اجرای سیستم‌های آتش‌نشانی و آب‌افشان در اصفهان با ۲۵ سال سابقه و مجوزهای رسمی.">
+    <meta name="theme-color" content="#facc15">
+    <title>شرکت تاسیساتی آوین | گازرسانی و آتش‌نشانی در اصفهان</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Vazirmatn Font -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.0/Vazirmatn-font-face.css" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.0/Vazirmatn-font-face.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.0/Vazirmatn-font-face.css"></noscript>
+
+    <!-- Font Awesome -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
+
+    <style>
+        :root {
+            --primary: #facc15; /* زرد لیمویی */
+            --primary-dark: #eab308;
+            --primary-light: #fef08a;
+            --bg-body: #09090b;
+            --bg-surface: #18181b;
+            --bg-surface-glass: rgba(24, 24, 27, 0.7);
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            --radius-lg: 1rem;
+            --radius-md: 0.75rem;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --container-width: 1200px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: inherit;
+        }
+
+        :focus-visible {
+            outline: 2px dashed var(--primary);
+            outline-offset: 4px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--text-main);
+        }
+
+        h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
+        h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); text-align: center; margin-bottom: 1rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+
+        .section-desc {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background: var(--bg-surface-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-glass);
+        }
+
+        /* Buttons */
+        .btn {
+            position:relative;
+
+            overflow:hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 0.875rem 2rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: #000000;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(250, 204, 21, 0.4);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--border-glass);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            box-shadow:
+            0 8px 30px rgba(0,0,0,.35);
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 0.75rem 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--primary);
+            letter-spacing: -1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--text-main);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            background: radial-gradient(circle at 50% 20%, rgba(250, 204, 21, 0.08) 0%, transparent 60%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(250, 204, 21, 0.1);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(250, 204, 21, 0.2);
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.125rem;
+            margin: 1.5rem 0 2.5rem 0;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats-card {
+            padding: 2.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-item .label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-content p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .feature-item i {
+            color: var(--primary);
+            background: rgba(250, 204, 21, 0.1);
+            padding: 0.5rem;
+            border-radius: var(--radius-md);
+        }
+
+        .about-visual {
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-visual::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(250, 204, 21, 0.1) 0%, transparent 100%);
+            z-index: 1;
+        }
+
+        .about-visual-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-visual-content i {
+            font-size: 5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            padding: 2.5rem 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(250, 204, 21, 0.4);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(250, 204, 21, 0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-md);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Why Us Section */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .why-card {
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .why-card:hover {
+            background: rgba(24, 24, 27, 0.9);
+            border-color: var(--primary);
+        }
+
+        .why-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Licenses Section */
+        .licenses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .license-card {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .license-card i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .license-card span {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .project-card .project-tag {
+            font-size: 0.75rem;
+            color: var(--primary);
+            background: rgba(250, 204, 21, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            align-self: flex-start;
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            background: var(--bg-surface);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: var(--text-muted);
+            border: 1px solid var(--border-glass);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-placeholder {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: scale(1.02);
+        }
+
+        .gallery-placeholder i {
+            font-size: 2.5rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-surface-glass);
+            color: var(--text-main);
+            font-weight: 600;
+            text-align: right;
+            border: 1px solid var(--border-glass);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            color: var(--primary);
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: rgba(24, 24, 27, 0.4);
+            border: 1px solid transparent;
+            border-top: none;
+        }
+
+        .faq-answer-content {
+            padding: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            border-color: var(--border-glass);
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            padding: 3rem 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            background: rgba(250, 204, 21, 0.1);
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card a, .contact-card span {
+            font-size: 1.2rem;
+            font-weight: 700;
+            direction: ltr;
+        }
+
+        .contact-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            direction: rtl;
+        }
+
+        /* Footer */
+        footer {
+            background: #050506;
+            border-top: 1px solid var(--border-glass);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Floating Actions */
+        .floating-actions {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            transition: var(--transition);
+        }
+
+        .float-btn.whatsapp {
+            background-color: #25d366;
+        }
+
+        .float-btn.call {
+            background-color: var(--primary);
+            color: #000000;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox Modal */
+        .lightbox-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .lightbox-content {
+            background: var(--bg-surface);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-glass);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .lightbox-close:hover {
+            color: var(--primary);
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-grid, .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .hero {
+                text-align: center;
+                padding-top: 120px;
+            }
+            .hero-actions {
+                justify-content: center;
+            }
+            .hero-badge {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(9, 9, 11, 0.95);
+                backdrop-filter: blur(16px);
+                flex-direction: column;
+                padding: 2rem 0;
+                border-bottom: 1px solid var(--border-glass);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.4s ease-in-out;
+                pointer-events: none;
+                visibility: hidden;
+            }
+            .nav-links.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar" aria-label="ناوبری اصلی">
+                <a href="#" class="logo"><i class="fa-solid fa-fire-flame-curved"></i>
+
+                آوین</a>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about" class="nav-link">درباره شرکت</a></li>
+                    <li><a href="#services" class="nav-link">خدمات</a></li>
+                    <li><a href="#why-us" class="nav-link">چرا آوین</a></li>
+                    <li><a href="#licenses" class="nav-link">مجوزها</a></li>
+                    <li><a href="#projects" class="nav-link">پروژه‌ها</a></li>
+                    <li><a href="#gallery" class="nav-link">گالری</a></li>
+                    <li><a href="#faq" class="nav-link">سوالات متداول</a></li>
+                    <li><a href="#contact" class="nav-link">تماس با ما</a></li>
+                </ul>
+
+                <button
+                class="mobile-menu-btn"
+                id="menuBtn"
+                aria-expanded="false"
+                aria-label="باز کردن منو"> id="menuBtn" aria-label="منو">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content fade-up">
+                        <div class="hero-badge">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                            تاسیسات و گازرسانی در اصفهان
+                        </div>
+                        <h1>شرکت تاسیساتی <span>آوین</span></h1>
+                        <p>تجربه، پشتکار، کیفیت کار، قیمت مناسب</p>
+                        <div class="hero-actions">
+                            <a href="#services" class="btn btn-primary">
+                                مشاهده خدمات
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                استعلام قیمت و مشاوره
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-stats-card glass-panel fade-up">
+                        <div class="stat-item">
+                            <span class="number" data-target="25">0</span>
+                            <span class="label">سال سابقه تخصصی</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">
+۱۳۸۷
+</span>
+                            <span class="label">سال شروع فعالیت</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content fade-up">
+                        <h2>درباره شرکت آوین</h2>
+                        <p>شرکت تاسیساتی آوین از سال ۱۳۸۷ فعالیت رسمی خود را آغاز نموده و با بیش از ۲۵ سال سابقه درخشان در زمینه گازرسانی و اجرای سیستم‌های آتش‌نشانی در سطح استان اصفهان فعالیت می‌کند.</p>
+                        <p>ما با تکیه بر تجربه، پشتکار و کادر فنی مجرب، همواره کیفیت بالا و قیمت مناسب را سرلوحه کار خود قرار داده‌ایم.</p>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                کیفیت بالا
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                قیمت مناسب
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                خوش‌قولی
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                جسارت در اجرا
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual glass-panel fade-up">
+                        <div class="about-visual-content">
+                            <i class="fa-solid fa-industry" aria-hidden="true"></i>
+                            <h3>پیشرو در صنعت تاسیسات اصفهان</h3>
+                            <p style="color: var(--text-muted);">محدوده فعالیت: اصفهان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2 class="fade-up">خدمات تخصصی آوین</h2>
+                <p class="section-desc fade-up">ارائه کلیه خدمات تاسیساتی با بالاترین استانداردهای مهندسی</p>
+                <div class="services-grid">
+                    <div class="service-card glass-panel fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></div>
+                        <h3>گازرسانی واحدهای مسکونی</h3>
+                        <p>طراحی و اجرای استاندارد شبکه گاز واحدهای مسکونی طبق ضوابط نظام مهندسی.</p>
+                    </div>
+                    <div class="service-card glass-panel fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-store" aria-hidden="true"></i></div>
+                        <h3>گازرسانی واحدهای تجاری</h3>
+                        <p>اجرای تخصصی لوله‌کشی و انشعابات گاز برای مجتمع‌ها و واحدهای تجاری.</p>
+                    </div>
+                    <div class="service-card glass-panel fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></div>
+                        <h3>گازرسانی واحدهای اداری</h3>
+                        <p>تامین ایمنی و اجرای دقیق سیستم‌های گازرسانی سازمان‌ها و ادارات.</p>
+                    </div>
+                    <div class="service-card glass-panel fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+                        <h3>گازرسانی صنایع</h3>
+                        <p>اجرای پروژه‌های بزرگ صنعتی و کارخانجات با تجهیزات پیشرفته.</p>
+                    </div>
+                    <div class="service-card glass-panel fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-fire-extinguisher" aria-hidden="true"></i></div>
+                        <h3>اجرای سیستم آتش‌نشانی</h3>
+                        <p>طراحی و اجرای سیستم‌های اعلام و اطفاء حریق ساختمانی و صنعتی.</p>
+                    </div>
+                    <div class="service-card glass-panel fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-shower" aria-hidden="true"></i></div>
+                        <h3>اجرای سیستم آب‌افشان</h3>
+                        <p>نصب و راه‌اندازی سیستم‌های اسپرینکلر (آب‌افشان) آتش‌نشانی.</p>
+                    </div>
+                    <div class="service-card glass-panel fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-fire-flame-curved" aria-hidden="true"></i></div>
+                        <h3>اجرای لوله‌کشی جوشی</h3>
+                        <p>لوله‌کشی تخصصی جوشی فشارقوی و صنعتی با تاییدیه بازرسی.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us">
+            <div class="container">
+                <h2 class="fade-up">چرا آوین؟</h2>
+                <p class="section-desc fade-up">دلایل اعتماد کارفرمایان به شرکت تاسیساتی آوین</p>
+                <div class="why-grid">
+                    <div class="why-card glass-panel fade-up">
+                        <i class="fa-solid fa-medal" aria-hidden="true"></i>
+                        <h3>کیفیت بالا</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">استفاده از متریال مرغوب و اجرای استاندارد</p>
+                    </div>
+                    <div class="why-card glass-panel fade-up">
+                        <i class="fa-solid fa-tags" aria-hidden="true"></i>
+                        <h3>قیمت مناسب</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">تعرفه منصفانه و اقتصادی متناسب با بودجه</p>
+                    </div>
+                    <div class="why-card glass-panel fade-up">
+                        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        <h3>خوش‌قولی</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">تحویل پروژه در موعد مقرر و تعهد کاری</p>
+                    </div>
+                    <div class="why-card glass-panel fade-up">
+                        <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                        <h3>جسارت در اجرا</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">توانایی مدیریت و اجرای پروژه‌های چالش‌برانگیز</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Licenses Section -->
+        <section id="licenses">
+            <div class="container">
+                <h2 class="fade-up">مجوزها و تاییده‌ها</h2>
+                <p class="section-desc fade-up">دارای رسمی‌ترین مجوزهای فعالیت در حوزه تاسیسات</p>
+                <div class="licenses-grid">
+                    <div class="license-card glass-panel fade-up">
+                        <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                        <span>سازمان نظام مهندسی</span>
+                    </div>
+                    <div class="license-card glass-panel fade-up">
+                        <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
+                        <span>اتحادیه تأسیسات گاز</span>
+                    </div>
+                    <div class="license-card glass-panel fade-up">
+                        <i class="fa-solid fa-building-shield" aria-hidden="true"></i>
+                        <span>شرکت گاز</span>
+                    </div>
+                    <div class="license-card glass-panel fade-up">
+                        <i class="fa-solid fa-award" aria-hidden="true"></i>
+                        <span>مدرک فنی و حرفه‌ای</span>
+                    </div>
+                    <div class="license-card glass-panel fade-up">
+                        <i class="fa-solid fa-book" aria-hidden="true"></i>
+                        <span>مبحث ۱۷ نظام مهندسی</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="fade-up">پروژه‌های انجام شده</h2>
+                <p class="section-desc fade-up">بخشی از پروژه‌های شاخص اجرا شده توسط شرکت آوین</p>
+                <div class="projects-grid">
+                    <div class="project-card glass-panel fade-up">
+                        <span class="project-tag">پروژه عمرانی</span>
+                        <h3>سلب سازه</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">اجرای تاسیسات و گازرسانی با بالاترین دقت فنی.</p>
+                    </div>
+                    <div class="project-card glass-panel fade-up">
+                        <span class="project-tag">مجتمع مسکونی</span>
+                        <h3>نگین آبشار</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">گازرسانی و سیستم‌های ایمنی مجتمع مسکونی نگین آبشار.</p>
+                    </div>
+                    <div class="project-card glass-panel fade-up">
+                        <span class="project-tag">پروژه انبوه سازی</span>
+                        <h3>مسکن مهر</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">همکاری در پروژه‌های بزرگ مقیاس مسکن مهر.</p>
+                    </div>
+                    <div class="project-card glass-panel fade-up">
+                        <span class="project-tag">پروژه رفاهی</span>
+                        <h3>خانه کارگر</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">اجرای تاسیسات و لوله‌کشی‌های مرتبط.</p>
+                    </div>
+                    <div class="project-card glass-panel fade-up">
+                        <span class="project-tag">پروژه‌های شخصی</span>
+                        <h3>پروژه‌های شخصی متعدد</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">اجرای صدها پروژه مسکونی، تجاری و اداری شخصی در اصفهان.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <div class="container">
+                <h2 class="fade-up">گالری تصاویر</h2>
+                <p class="section-desc fade-up">تصاویری از روند اجرای پروژه‌های تاسیساتی آوین</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item fade-up" onclick="openLightbox('گازرسانی صنعتی و تجاری')">
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-image" aria-hidden="true"></i>
+                            <span>گازرسانی صنعتی و تجاری</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-up" onclick="openLightbox('اجرای سیستم آتش‌نشانی')">
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-image" aria-hidden="true"></i>
+                            <span>اجرای سیستم آتش‌نشانی</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-up" onclick="openLightbox('لوله‌کشی جوشی فشارقوی')">
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-image" aria-hidden="true"></i>
+                            <span>لوله‌کشی جوشی فشارقوی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container">
+                <h2 class="fade-up">سوالات متداول</h2>
+                <p class="section-desc fade-up">پاسخ به سوالات رایج کارفرمایان محترم</p>
+                <div class="faq-container fade-up">
+                    <div class="faq-item glass-panel">
+                        <button
+                        class="faq-question"
+                        aria-expanded="false">
+                            <span>محدوده فعالیت شرکت آوین کجاست؟</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">محدوده فعالیت شرکت آوین در اصفهان و مناطق اطراف می‌باشد.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-panel">
+                        <button
+                        class="faq-question"
+                        aria-expanded="false">
+                            <span>ساعات کاری شرکت به چه صورت است؟</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">شنبه تا پنجشنبه از ساعت ۷ صبح تا ۵ بعدازظهر آماده پاسخگویی و ارائه خدمات هستیم.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-panel">
+                        <button
+                        class="faq-question"
+                        aria-expanded="false">
+                            <span>چگونه می‌توانیم برای پروژه خود استعلام قیمت بگیریم؟</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">شما می‌توانید از طریق شماره تماس 09131259155 یا واتساپ با ما در ارتباط باشید تا جزئیات پروژه بررسی و اعلام هزینه گردد.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="fade-up">تماس با ما</h2>
+                <p class="section-desc fade-up">برای مشاوره و اجرای پروژه‌ها با ما در ارتباط باشید</p>
+                <div class="contact-grid">
+                    <div class="contact-card glass-panel fade-up">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <h3>تلفن تماس</h3>
+                        <a href="tel:09131259155">09131259155</a>
+                        <p>شنبه تا پنجشنبه: ۷ صبح تا ۵ بعدازظهر</p>
+                    </div>
+                    <div class="contact-card glass-panel fade-up">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        <h3>واتساپ</h3>
+                        <a href="https://wa.me/989131259155" target="_blank" rel="noopener noreferrer">09131259155</a>
+                        <p>پشتیبانی و ارسال پیام فوری</p>
+                    </div>
+                    <div class="contact-card glass-panel fade-up">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <h3>ایمیل</h3>
+                        <a href="mailto:yones.namdari.2020@gmail.com" style="font-size: 1rem;">yones.namdari.2020@gmail.com</a>
+                        <p>ارسال اسناد و درخواست همکاری</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>تمامی حقوق محفوظ است | شرکت تاسیساتی آوین (فعالیت از ۱۳۸۷)</p>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="https://wa.me/989131259155" target="_blank" rel="noopener noreferrer" class="float-btn whatsapp" aria-label="واتساپ">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="tel:09131259155" class="float-btn call" aria-label="تماس تلفنی">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content glass-panel">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <i class="fa-solid fa-image" style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem;" aria-hidden="true"></i>
+            <h3 id="lightboxTitle">عنوان تصویر</h3>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">نمونه کار اجرایی شرکت تاسیساتی آوین</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        'use strict';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu
+            const menuBtn = document.getElementById('menuBtn');
+            const navLinks = document.getElementById('navLinks');
+            const menuIcon = menuBtn.querySelector('i');
+
+            menuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuBtn.setAttribute(
+                "aria-expanded",
+                navLinks.classList.contains("active")
+                );
+                document.body.style.overflow =
+                navLinks.classList.contains("active")
+                ? "hidden"
+                : "";
+                if (navLinks.classList.contains('active')) {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-xmark');
+                } else {
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+
+            // Sticky Header
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    faqItems.forEach(i=>{
+                    i.querySelector(".faq-question")
+                    .setAttribute("aria-expanded","false");
+                    });
+                    if (!isActive) {
+                        item.classList.add('active');
+                        question.setAttribute(
+                        "aria-expanded",
+                        "true"
+                        );
+                    }
+                });
+            });
+
+            // Scroll Animation (Intersection Observer)
+            const fadeElements = document.querySelectorAll('.fade-up');
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElements.forEach(el => observer.observe(el));
+
+            // Counter Animation
+            const counters = document.querySelectorAll('.number');
+            const speed = 200;
+
+            const runCounter = (counter) => {
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+                const inc = target / speed;
+
+                const updateCount = () => {
+                    count += inc;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            };
+
+            const counterObserver = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        runCounter(entry.target);
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(counter => counterObserver.observe(counter));
+        });
+
+        // Lightbox Functions
+        function openLightbox(title) {
+            const modal = document.getElementById('lightboxModal');
+            const titleEl = document.getElementById('lightboxTitle');
+            titleEl.innerText = title;
+            modal.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.remove('active');
+        }
+            document.addEventListener("keydown",(e)=>{
+
+            if(e.key==="Escape"){
+
+            closeLightbox();
+
+            }
+
+            });
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('lightboxModal');
+            if (e.target === modal) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
