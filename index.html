@@ -459,43 +459,33 @@
         }
 
         /* Gallery Section */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
 
-        .gallery-item {
-            position: relative;
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            aspect-ratio: 4/3;
-            cursor: pointer;
-        }
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    aspect-ratio: 4 / 3;
+    cursor: pointer;
+    border: 1px solid var(--border-glass);
+    background: var(--bg-surface);
+}
 
-        .gallery-placeholder {
-            width: 100%;
-            height: 100%;
-            background: var(--bg-surface);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            color: var(--text-muted);
-            border: 1px solid var(--border-glass);
-            transition: var(--transition);
-        }
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s ease;
+}
 
-        .gallery-item:hover .gallery-placeholder {
-            border-color: var(--primary);
-            color: var(--primary);
-            transform: scale(1.02);
-        }
-
-        .gallery-placeholder i {
-            font-size: 2.5rem;
-        }
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
 
         /* FAQ Section */
         .faq-container {
@@ -994,32 +984,30 @@
         </section>
 
         <!-- Gallery Section -->
-        <section id="gallery">
-            <div class="container">
-                <h2 class="fade-up">گالری تصاویر</h2>
-                <p class="section-desc fade-up">تصاویری از روند اجرای پروژه‌های تاسیساتی آوین</p>
-                <div class="gallery-grid">
-                    <div class="gallery-item fade-up" onclick="openLightbox('گازرسانی صنعتی و تجاری')">
-                        <div class="gallery-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>گازرسانی صنعتی و تجاری</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item fade-up" onclick="openLightbox('اجرای سیستم آتش‌نشانی')">
-                        <div class="gallery-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>اجرای سیستم آتش‌نشانی</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item fade-up" onclick="openLightbox('لوله‌کشی جوشی فشارقوی')">
-                        <div class="gallery-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>لوله‌کشی جوشی فشارقوی</span>
-                        </div>
-                    </div>
-                </div>
+<section id="gallery">
+    <div class="container">
+        <h2 class="fade-up">گالری تصاویر</h2>
+        <p class="section-desc fade-up">
+            تصاویری از روند اجرای پروژه‌های تاسیساتی آوین
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item fade-up">
+                <img src="images/project1.jpg" alt="پروژه شماره 1">
             </div>
-        </section>
+
+            <div class="gallery-item fade-up">
+                <img src="images/project2.jpg" alt="پروژه شماره 2">
+            </div>
+
+            <div class="gallery-item fade-up">
+                <img src="images/project3.jpg" alt="پروژه شماره 3">
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <!-- FAQ Section -->
         <section id="faq">
